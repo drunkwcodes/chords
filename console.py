@@ -1,6 +1,8 @@
 from synthesizer import Player, Synthesizer, Waveform
 from pychord import Chord
 
+from util import to_real_chord
+
 
 player = Player()
 player.open_stream()
@@ -21,6 +23,11 @@ def play_freqs():
     chord = [440.0, 550.0, 660.0]
     player.play_wave(synthesizer.generate_chord(chord, 3.0))
 
+
+
+def play_chord(ch):
+    # >>> play_chord(to_real_chord(Chord("C").components()))
+    player.play_wave(synthesizer.generate_chord(ch, 2.0))
 
 def play_cadence():
     # Play cadence
