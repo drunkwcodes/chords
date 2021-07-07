@@ -29,6 +29,9 @@ def play_chord(ch):
     # >>> play_chord(to_real_chord(Chord("C").components()))
     player.play_wave(synthesizer.generate_chord(ch, 2.0))
 
+def pc(ch):
+    play_chord(to_real_chord(Chord(ch).components()))
+
 def play_cadence():
     # Play cadence
     ch1 = ["C3", "E3", "G3"]
