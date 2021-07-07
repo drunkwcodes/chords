@@ -25,12 +25,12 @@ def play_freqs():
 
 
 
-def play_chord(ch):
+def play_chord(ch, t=2.0):
     # >>> play_chord(to_real_chord(Chord("C").components()))
-    player.play_wave(synthesizer.generate_chord(ch, 2.0))
+    player.play_wave(synthesizer.generate_chord(ch, t))
 
-def pc(ch):
-    play_chord(to_real_chord(Chord(ch).components()))
+def pc(ch, t=2.0):
+    play_chord(to_real_chord(Chord(ch).components()), t)
 
 def play_cadence():
     # Play cadence
@@ -55,6 +55,10 @@ def play_blues_541():
     # https://www.youtube.com/watch?v=5NgiaHbSH3A&t=243s
     pc("D7")
     pc("C7")
+    pc("G7")
+
+def play_bossa_nova():
+    pc("Fmaj7")
     pc("G7")
 
 play_cadence()
