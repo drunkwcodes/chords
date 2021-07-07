@@ -43,4 +43,18 @@ def play_cadence():
     player.play_wave(synthesizer.generate_chord(ch57, 1.0))
     player.play_wave(synthesizer.generate_chord(ch1, 4.0))
 
+
+def play_jazz_251():
+    # https://www.youtube.com/watch?v=zH4uQYgDotM&t=188s
+    pc("Dm7")
+    pc("G7")
+    pc("Cmaj7")
+
+
+def play_blues_541():
+    # https://www.youtube.com/watch?v=5NgiaHbSH3A&t=243s
+    pc("D7")
+    pc("C7")
+    pc("G7")
+
 play_cadence()
