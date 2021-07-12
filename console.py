@@ -29,6 +29,9 @@ def play_chord(ch, t=2.0):
     # >>> play_chord(to_real_chord(Chord("C").components()))
     player.play_wave(synthesizer.generate_chord(ch, t))
 
+def c(ch):
+    return Chord(ch).components()
+
 def pc(ch, t=2.0):
     play_chord(to_real_chord(Chord(ch).components()), t)
 
