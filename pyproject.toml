@@ -1,0 +1,28 @@
+[project]
+name = "chords"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Drunkwcodes", email = "drunkwcodes@gmail.com"},
+]
+dependencies = [
+    "synthesizer>=0.2.0",
+    "pychord>=1.2.2",
+    "pyaudio>=0.2.14",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "IPython>=8.26.0",
+    "black>=24.4.2",
+    "pytest>=8.3.1",
+    "mkdocs>=1.6.0",
+    "isort>=5.13.2",
+]
