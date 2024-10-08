@@ -9,6 +9,9 @@ dependencies = [
     "synthesizer>=0.2.0",
     "pychord>=1.2.2",
     "pyaudio>=0.2.14",
+    "pretty-midi>=0.2.10",
+    "setuptools>=75.1.0",
+    "midi2audio>=0.1.1",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
